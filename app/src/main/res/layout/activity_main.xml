@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login"
+    android:orientation="vertical"
+    tools:context=".controller.activity.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/fragmentBox"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="21"
+        tools:ignore="Suspicious0dp">
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#CAE1FF"
+        android:orientation="horizontal"
+        tools:ignore="Suspicious0dp">
+
+        <LinearLayout
+            android:id="@+id/view1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:paddingLeft="52dp"
+            android:paddingTop="2dp">
+
+            <ImageButton
+                android:id="@+id/deviceButton"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:background="#FFF8DC"
+                android:scaleType="fitCenter"
+                android:src="@drawable/bg_device" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/view2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:paddingLeft="56dp"
+            android:paddingTop="2dp">
+
+            <ImageButton
+                android:id="@+id/sceneButton"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:background="#FFF8DC"
+                android:scaleType="fitCenter"
+                android:src="@drawable/bg_scene" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/view3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:paddingLeft="64dp"
+            android:paddingTop="2dp">
+
+            <ImageButton
+                android:id="@+id/settingButton"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:background="#FFF8DC"
+                android:scaleType="fitCenter"
+                android:src="@drawable/bg_setting" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

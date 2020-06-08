@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.smarthome.demo">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/image"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/image"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".controller.activity.CurtainActivity"></activity>
+
+        <activity android:name=".controller.activity.SmogActivity" />
+        <activity android:name=".controller.activity.FanActivity" />
+        <activity android:name=".controller.activity.TemperatureActivity" />
+        <activity android:name=".controller.activity.BulbActivity" />
+        <activity android:name=".controller.activity.UserActivity" android:theme="@style/Theme.DialogActivity"/>
+        <activity android:name=".controller.activity.MainActivity" />
+        <activity android:name=".controller.activity.RegisterActivity" />
+        <activity android:name=".controller.activity.WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".controller.activity.LoginActivity" />
+
+        <service android:name="org.eclipse.paho.android.service.MqttService" />
+    </application>
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+</manifest>

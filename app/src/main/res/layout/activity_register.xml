@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login"
+    android:focusableInTouchMode="true"
+    tools:context=".controller.activity.RegisterActivity">
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="309dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="140dp"
+        android:background="@drawable/bg_button"
+        android:text="注              册"
+        android:textColor="#ffffff"
+        android:textSize="14sp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password" />
+
+    <Button
+        android:id="@+id/security"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="96dp"
+        android:background="@drawable/bg_button"
+        android:text="获取随机验证码"
+        android:textColor="#ffffff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="316dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="52dp"
+        android:ems="10"
+        android:hint="密码"
+        android:inputType="textPassword"
+        android:textColor="#0A0A0A"
+        android:textColorHint="#0A0A0A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phone" />
+
+    <EditText
+        android:id="@+id/securityCode"
+        android:layout_width="163dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="2dp"
+        android:hint="验证码"
+        android:textColor="#0A0A0A"
+        android:textColorHint="#0A0A0A"
+        app:layout_constraintEnd_toStartOf="@+id/security"
+        app:layout_constraintHorizontal_bias="0.846"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="322dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="232dp"
+        android:ems="10"
+        android:hint="手机号"
+        android:inputType="phone"
+        android:maxLength="11"
+        android:textColor="#0A0A0A"
+        android:textColorHint="#0A0A0A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
